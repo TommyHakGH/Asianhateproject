@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+	
+<style>
+	#main{
+	width: 1500px;
+	}
+	#header{
+	border-width: 6px;
+	border-style: solid;
+	margin-left: -13px;
+	margin-top: -9px;
+	background-color: rgba(0,0,0,1.00);
+	top: 0px;
+	left: 0px;
+	margin-top: -10px;
+	width: 1913px;
+	position: fixed;
+	}
+	h1{
+	font-family: 'Michroma', sans-serif;
+	color: rgba(247,255,0,1.00);
+	text-shadow: 3px 3px rgba(0,0,0,1.00);
+	font-size: 60px;
+	margin-left: 16px;
+	padding-left: 9px;
+	}
+	#body{
+	font-family: 'Odibee Sans', cursive;
+	width: 1400px;
+	padding-right: 0px;
+	border: thin solid rgba(0,0,0,1.00);
+	margin-left: 229px;
+	padding-bottom: 218px;
+	margin-top: 166px;
+	background-color: rgba(255,255,255,1.00);
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(251,251,251,1.00) 81.86%,rgba(246,255,1,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(251,251,251,1.00) 81.86%,rgba(246,255,1,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(251,251,251,1.00) 81.86%,rgba(246,255,1,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(251,251,251,1.00) 81.86%,rgba(246,255,1,1.00) 100%);
+	}
+	#footer{
+	color: rgba(0,0,0,1.00);
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 50px;
+	padding-left: 250px;
+	margin-top: 0px;
+	margin-left: 250px;
+	font-size: 25px;
+	height: 0px;
+	margin-bottom: 0px;
+	}
+	
+	#Logo{
+	position: absolute; /*or fixed*/
+	right: 0px;
+	margin-right: 290px;
+}
+	
+	.navbar {
+	overflow: hidden;
+	background-color: #333;
+	text-align: center;
+}
+	.paragraph1{
+	border-style: solid;
+	padding-left: 12px;
+	margin-left: 255px;
+	margin-right: 256px;
+	margin-bottom: 0px;
+	padding-bottom: 25px;
+	padding-top: 10px;
+	padding-right: 4px;
+	background-color: rgba(231,235,99,1.00);
+	font-size: 25px;
+	}
+	
+	.paragraph2{
+	border-style: solid;
+	padding-left: 12px;
+	margin-left: 316px;
+	margin-right: 344px;
+	margin-bottom: 0px;
+	padding-bottom: 25px;
+	padding-top: 10px;
+	padding-right: 4px;
+	background-color: rgba(231,235,99,1.00);
+	margin-top: 215px;
+	font-size: 25px;
+	}
+	
+	.video1{
+	margin-left: 465px;
+	margin-top: 19px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	}
+	
+	.video2{
+	margin-left: 374px;
+	margin-top: -411px;
+	padding-left: 282px;
+	border-width: 0px;
+	}
+	
+	.video3{
+	margin-left: 249px;
+	padding-left: 175px;
+	}
+	
+	.paragraph3{
+	border-style: solid;
+	padding-left: 12px;
+	margin-left: 316px;
+	margin-right: 344px;
+	margin-bottom: 0px;
+	padding-bottom: 25px;
+	padding-top: 10px;
+	padding-right: 4px;
+	background-color: rgba(231,235,99,1.00);
+	margin-top: -176px;
+	font-size: 25px;
+	}
+	
+	.paragraph4{
+	margin-left: -146px;
+	margin-right: 500px;
+	margin-top: 32px;
+	padding-right: 326px;
+	padding-left: 412px;
+	padding-bottom: 0px;
+	padding-top: 7px;
+	font-size: 25px;
+	}
+	
+	.paragraph5{
+	padding-bottom: 0px;
+	font-size: 25px;
+	margin-top: -100px;
+	margin-left: 91px;
+	margin-right: 127px;
+	}
+	
+	.paragraph6{
+	padding-bottom: 0px;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-left: 91px;
+	margin-right: 127px;
+	}
+	.font{
+	font-family: 'Odibee Sans', cursive;
+	margin-left: 250px;
+	}
+	
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+	font-family: 'Revalia', cursive;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	margin-left: 545px;
+	padding-left: 300px;
+	margin-top: -116px;
+}
+
+.dropdown .dropbtn {
+	font-size: 40px;
+	border: none;
+	outline: none;
+	color: rgba(249,255,58,1.00);
+	padding-top: 15px;
+	padding-right: 16px;
+	padding-left: 16px;
+	padding-bottom: 14px;
+	font-family: inherit;
+	margin: 0;
+	background-color: rgba(0,0,0,1.00);
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+font-family: 'Revalia', cursive;
+  background-color: rgba(142,0,0,0.90);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: rgba(247,255,0,1.00);
+	padding-top: 11px;
+	padding-right: 11px;
+	padding-left: 11px;
+	padding-bottom: 11px;
+	text-decoration: none;
+	display: block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(142,0,0,0.90);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+	#Statistics{
+	margin-left: 390px;
+	border: 4px solid rgba(197,15,15,1.00);
+	border-top-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	margin-top: 21px;
+	}
+	
+	#SmallBar{
+	border: 4px solid rgba(197,15,15,1.00);
+	border-top-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	padding-top: 0px;
+	margin-left: -600px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: -155px;
+	}
+	
+	#SmallLine{
+	border: 4px solid rgba(197,15,15,1.00);
+	border-top-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	margin-bottom: -155px;
+	margin-left: -270px;
+	}
+	
+</style>
+	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Odibee+Sans&family=Revalia&display=swap" rel="stylesheet">  	
+	
+<meta charset="utf-8">
+<title>Awareness</title>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+<style type="text/css">
+body {
+	background-color: rgba(246,255,1,1);
+}
+a:link {
+	color: rgba(231,235,99,1);
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: rgba(231,235,99,1);
+}
+a:hover {
+	text-decoration: none;
+	color: rgba(231,235,99,1);
+}
+a:active {
+	text-decoration: none;
+	color: rgba(231,235,99,1);
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: Michroma, sans-serif;
+}
+</style>
+<script type="text/javascript">
+    $(function() {
+        $('#gallery a').lightBox();
+    });
+	</script>	
+	
+</head>
+
+<body>
+<div id="main">
+<div id="header">
+<img src="Pictures/Logo.png" alt="" width="165" height="164" id="Logo" title="Red Lotus"/>
+<h1><a href="Title.html">Stop Asian Hate</a></h1>
+	<div class="dropdown">
+    <button class="dropbtn">Where To?
+      </button>
+    <div class="dropdown-content">
+      <a href="Awareness.html">Awareness</a>
+      <a href="HowToHelp.html">How To Help</a>
+      <a href="Resources.html">Resources</a>
+    </div>
+	</div>
+	</div>
+<div id="body">
+	<p class="paragraph1"> An analysis of polic department statistics has revealed that the United states experienced a significant hike in anti-Asian hate crimes last year across major cities.The analysis released by the Center for the Study of Hate and Extremism at California State University, San Bernardino, this month examined hate crimes in 16 of America’s largest cities. It revealed that while such crimes in 2020 decreased overall by 7 percent, those targeting Asian people rose by nearly 150 percent.</p>
+	<div id= "gallery">
+    <a href="Pictures/Statistics.png"><img src="Pictures/Statistics.png" alt="" width="600" height="393" id="Statistics" title="Asian Crime Stats"/></a>
+	<a href="Pictures/BarGraph.png"><img src="Pictures/8e898aadfbddc7b0ee1ccf7e9a13c48b.png" alt="" width="200" height="137" id="SmallBar" title="Small Bar Graph"/></a>
+	<a href="Pictures/LineGraph.png"><img src="Pictures/e219403772d19cb9494fca9f8f4f91f6.png" alt="" width="200" height="108" id="SmallLine" title="Small Line Graph"/></a>
+		</div>
+<p class= "paragraph2">Anti-Asian hate crimes increased by nearly 150% in 2020, mostly in N.Y. and L.A., new report says from 2019 to 2020, the overall hate crime rate declined, while hate crimes targeting Asians increased, from three to 28 in New York and seven to 15 in Los Angeles.</p>
+	
+	<iframe class = "video1" width="400" height="500" frameborder="0" src="https://www.bbc.com/news/av-embeds/56218684/vpid/p09b57v1"></iframe>
+
+<p class= "paragraph3">The advocacy group Stop AAPI Hate said it received more than 2,800 reports of hate incidents directed at Asian Americans nationwide last year. The group set up its online self-reporting tool at the start of the pandemic. New York City hate crimes task force investigated 27 incidents in 2020, a nine fold increase from the previous year. In Oakland, California, police have added patrols and set up a command post in Chinatown.</p>	
+	
+<p class= "paragraph4">Advocates for Asian Americans say the violence can be linked to rising anti-Asian sentiment in the US.
+Some have directly blamed the anti-China rhetoric of former President Donald Trump, who often made mention of the pandemic as the "China virus" or the "kung flu".
+During his first week in office, President Joe Biden signed an executive action essentially banning the use of such language within the federal government.
+But, with Democrats now in control of both chambers of Congress, lawmakers and activists are calling for more attention and resources devoted to the issue. </p>	
+	
+	<iframe class= "video2" width="400" height="500" frameborder="0" src="https://www.bbc.com/news/av-embeds/56218684/vpid/p09c9fyt"></iframe>
+	
+<p class = "paragraph5"> Many of the attacks have also been targeted at women. There were 3,800 anti-Asian racist incidents, mostly against women, in past year
+“There is an intersectional dynamic going on that others may perceive both Asians and women and Asian women as easier targets,” one professor said.New data has revealed over the past year, the number of anti-Asian hate incidents — which can include shunning, slurs and physical attacks — is greater than previously reported. And a disproportionate number of attacks have been directed at women.</p>	
+	
+<iframe class="video3" width="560" height="315" src="https://www.youtube.com/embed/JASSjZSJ-vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+<p class= "paragraph6"> The report by Stop AAPI(Asian American and Pacific Islander) Hate documents 3,795 racially motivated attacks against Asian Americans from March to February, noting that the number is likely a fraction of the attacks that occurred, because many were not reported to the group. On Tuesday March 16th, 2021 eight people, including six Asian women, were shot to death at massage parlors in the Atlanta area. Authorities say however that the attacks "did bot appear to be" motivated by race, the shooter states that it was due to "sexual addiction" and wanted to get rid of the temptation that the establishments represtentd. But rights groups stressed that the broader context of recent hate crimes and harassment of Asian Americans should not be ignored. </p>	
+	</div>
+	
+	<div id="footer">
+	<h3 class = "font">Tommy Hak | Webart and Design Spring | 2021</h3>
+	</div>
+	</div>
+	
+	
+	
+	
+</body>
+</html>
